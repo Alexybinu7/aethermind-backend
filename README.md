@@ -18,7 +18,7 @@ This backend powers the free demo of AetherMind, handling requests from the fron
 
 ```bash
 # Clone repo
-git clone https://github.com/<your-username>/aethermind-backend.git
+git clone https://github.com/Alexybinu7/aethermind-backend.git
 cd aethermind-backend
 
 # Install dependencies
