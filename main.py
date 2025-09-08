@@ -14,7 +14,11 @@ app = FastAPI(
 # --- CORS (for MVP allow all; tighten later to your Netlify domain)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],            # change to your Netlify domain later
+      allow_origins=[
+        "https://dancing-beignet-da25c3.netlify.app",  # your Netlify site
+        "https://aethersphereorg.org",                 # your custom domain (when linked)
+        "http://localhost:3000"                        # optional, for local testing
+    ],            # change to your Netlify domain later
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
